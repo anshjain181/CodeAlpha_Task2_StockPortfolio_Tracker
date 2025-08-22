@@ -35,9 +35,10 @@ print(f"\nTotal Investment Value: ${total_value}")
 # Optionally save results in a text file
 save = input("\nDo you want to save the result to 'portfolio.txt'? (yes/no): ").lower()
 if save == "yes":
-        with open("D:\Ansh Jain Coding\codealpha\portfolio.txt", "w") as f:
+        with open("portfolio.txt", "w") as f:
                 f.write("Portfolio Summary:\n")
                 for stock, qty in portfolio.items():
                         f.write(f"{stock}: {qty} shares × ${stock_prices[stock]} = ${stock_prices[stock] * qty}\n")
                 f.write(f"\nTotal Investment Value: ${total_value}\n")
         print("Portfolio saved to 'portfolio.txt'")
+
